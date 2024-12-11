@@ -1,4 +1,5 @@
 {
-    "files": ["prisma/dev.db"]
+    "files": ["prisma/dev.db"],
+    "buildCommand": "npx prisma generate && npx prisma db push && next build"
   }
   
