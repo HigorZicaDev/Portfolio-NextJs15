@@ -165,16 +165,16 @@ export default function Home() {
             <div className="mt-4 grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {posts.map((post) => (
                   <div className='p-3 border rounded bg-black' key={post.id}>
-                      <p>{post.name}</p>
+                      <p className='mb-4 font-medium'>{post.name}</p>
                       <button
-                      className="aspect-square rounded-lg overflow-hidden"
+                      className="rounded-lg overflow-hidden"
                       onClick={() => setSelectedPost(post)}>
                         <Image
                           src={post.mainImage}
                           alt={`Post ${post.id}`}
                           width={200}
                           height={230}
-                          className="w-full h-full object-contain"
+                          className="w-full object-cover"
                         />
                     </button>
                   </div>
